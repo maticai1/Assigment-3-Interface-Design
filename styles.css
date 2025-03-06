@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #eae6f2;
+    background-image: linear-gradient(135deg, #eae6f2 25%, #ffffff 25%, #ffffff 50%, #eae6f2 50%, #eae6f2 75%, #ffffff 75%, #ffffff 100%);
+    background-size: 50px 50px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+
+main {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    background-color: #7b5ea0;
+    color: white;
+    padding: 2vw; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+
+section {
+    width: 90%;
+    max-width: 800px;
+    padding: 5%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 2% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .features h2 {
+    color: #7b5ea0;
+    font-size: 2rem;
+}
+
+.about img {
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.features {
+    background-color: #ffddc1;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    background-color: #fff;
+    margin: 10px;
+    padding: 3%;
+    border-radius: 10px;
+    color: #7b5ea0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.features li:hover {
+    transform: scale(1.05);
+    background-color: #ffe8d6;
+}
+
+
+footer {
+    background-color: #7b5ea0;
+    color: white;
+    padding: 5%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content img {
+    max-width: 200px; 
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 90%;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #d17b0f;
+    color: white;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #b5651d;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .about h2, .features h2 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 8%;
+    }
+
+    .features li {
+        padding: 5%;
+    }
+}
